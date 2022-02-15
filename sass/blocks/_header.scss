@@ -1,0 +1,32 @@
+.header {
+    height: 60px;
+    background-color: $background-gray;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header-links,
+.header-login {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header-links__item,
+.header-login__item {
+    font-family: Furore;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 16px;
+    text-transform: uppercase;
+    color: $pure-white;
+    margin-right: 40px;
+}
+
+.header-links__item:nth-last-child(1),
+.header-login__item:nth-last-child(1) {
+    margin-right: 0;
+}
+

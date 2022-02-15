@@ -1,0 +1,75 @@
+* {
+    box-sizing: border-box;
+}
+body {
+    background-color: $background-black;
+    color: $primary-white;
+    }
+body a {
+    text-decoration: none;
+    color: inherit;
+}
+
+body .container {
+    width: 1160px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.img {
+    max-width: 100%;
+}
+// псевдоэлемент нижнего подчеркивания в хедере
+.dashed {
+    position: relative;
+}
+.dashed:after {
+    position: absolute;
+    margin-top: 3px;
+    top: 100%;
+    left: 0;
+    width: 20px;
+    height: 2px;
+    background-color: $primary-white;
+    content: "";
+}
+
+.mr-50 {
+    margin-right: 50px;
+}
+
+// *
+//     box-sizing: border-box
+// body
+//     background-color: $background-black
+//     color: $primary-white
+//     a
+//         text-decoration: none
+//         color: inherit
+//     .container
+//         width: 1160px
+//         margin: auto
+//         display: flex
+//         justify-content: space-between
+//         align-items: center
+//     .img
+//         max-width: 100%
+//     // нижнее подчеркивание для элементов в хедере (на часть длины)
+//     .dashed
+//         position: relative
+//         &:after
+//             position: absolute
+//             margin-top: 3px
+//             top: 100%
+//             left: 0
+//             width: 20px
+//             height: 2px
+//             background-color: $primary-white
+//             content: ""
+//     // нижнее подчеркивание ссылок
+//         .link__dashed
+//     // marging and paddings
+//     .mr-50
+//         margin-right: 50px

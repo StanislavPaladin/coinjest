@@ -1,0 +1,330 @@
+.main .container {
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.main .navigation__left,
+.main .navigation__right {
+    cursor: pointer;
+    width: 30px;
+}
+
+.main .navigation__right {
+    transform: rotate(180deg);
+}
+
+.main-main {
+    margin-top: 100px;
+    max-width: 1100px;
+    margin-bottom: 150px;
+    text-transform: uppercase;
+}
+
+.main-main__title {
+    font-family: Furore;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 60px;
+    line-height: 69px;
+    margin-bottom: 50px;
+}
+
+.main-main__info {
+    font-family: Furore;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 25px;
+    line-height: 29px;
+}
+
+.main-card {
+    position: relative;
+    width: 1160px;
+    height: 300px;
+    padding: 30px 100px 30px 60px;
+    margin-bottom: 200px;
+    background: radial-gradient(141.73% 341.95% at -11% 50%, rgba(255, 255, 255, 0.093) 0%, rgba(255, 255, 255, 0) 100%, rgba(255, 255, 255, 0) 100%);
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+    text-transform: uppercase;
+
+}
+
+.main-card::after {
+    content: "";
+    position: absolute;
+    width: 250px;
+    height: 270px;
+    border: 1px solid red;
+    top: 15%;
+    right: 0;
+    background: linear-gradient(90deg, #37ECBA 0%, #72AFD3 100%);
+    opacity: 1;
+    filter: blur(130px);
+    z-index: -1;
+    /* background: url('../src/img/background/hero-bg.png') bottom no-repeat; */
+    -moz-background-size: 100%;
+    /* Firefox 3.6+ */
+    -webkit-background-size: 100%;
+    /* Safari 3.1+ и Chrome 4.0+ */
+    -o-background-size: 100%;
+    /* Opera 9.6+ */
+    background-size: 100%;
+    /* Современные браузеры */
+}
+
+.main-card__wrapper {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.main-card__title {
+    font-family: Furore;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 25px;
+    line-height: 29px;
+}
+
+.main-card__info,
+.main-card__link {
+    font-family: Furore;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 40px;
+    line-height: 46px;
+}
+
+.main-steps {
+    display: flex;
+    min-height: 472px;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-between;
+    margin-bottom: 200px;
+}
+
+.main-steps__wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    margin-right: 58px;
+}
+
+.main-steps__wrapper:nth-child(2) {
+    align-self: flex-end;
+}
+
+.main-steps__item {
+    width: 100%;
+}
+
+.main-steps__main {
+    width: 100%;
+    margin-bottom: 50px;
+    text-align: left;
+    font-family: Furore;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 35px;
+    line-height: 40px;
+    text-transform: uppercase;
+}
+
+.main-steps__item {
+    max-width: 500px;
+    margin-bottom: 40px;
+}
+
+.main-steps__item:nth-child(2) {
+    margin-bottom: 20px;
+}
+
+.main-steps__title {
+    font-family: Furore;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 23px;
+    margin-bottom: 10px;
+}
+
+.main-steps__info {
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 22px;
+}
+
+.main-about {
+    position: relative;
+    max-width: 459px;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 200px;
+}
+
+.main-about::after{
+    content: "";
+    position: absolute;
+    width: 500px;
+    height: 570px;
+    border: 1px solid red;
+    top: -200px;
+    left: 100%;
+    background: linear-gradient(90deg, rgba(106, 17, 203, 0.6) 0%, rgba(37, 117, 252, 0.6) 100%);
+    border-radius: 50%;
+    opacity: .5;
+    filter: blur(100px);
+    transform: rotate(20.81deg);
+    z-index: -1;
+    /* background: url('../src/img/background/hero-bg.png') bottom no-repeat; */
+    -moz-background-size: 100%;
+    /* Firefox 3.6+ */
+    -webkit-background-size: 100%;
+    /* Safari 3.1+ и Chrome 4.0+ */
+    -o-background-size: 100%;
+    /* Opera 9.6+ */
+    background-size: 100%;
+    /* Современные браузеры */
+}
+
+.main-about__title {
+    font-family: Furore;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 35px;
+    line-height: 40px;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
+
+.main-about__info {
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 32px;
+}
+
+.main-comments {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-bottom: 190px;
+    height: 250px;
+}
+
+.main-comments__big {
+    width: 372px;
+    font-family: Furore;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 35px;
+    line-height: 40px;
+    text-transform: uppercase;
+    margin-bottom: 40px;
+}
+
+.main-comments__slider {
+    width: 1050px;
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.main-comments__navigation {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+    width: 90px;
+}
+
+.main-comments__item {
+    display: flex;
+    flex-direction: column;
+    width: 547px;
+}
+
+.main-comments__title {
+    font-family: Furore;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 23px;
+}
+
+.main-comments__info {
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 32px;
+}
+
+.main-referrals {
+    min-width: 1065px;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-between;
+    margin-bottom: 157px;
+}
+
+.main-referrals__wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    width: 452px;
+}
+
+.main-referrals__wrapper:nth-last-child(1) {
+    width: 528px;
+    align-items: flex-end;
+}
+
+.main-referrals__h1 {
+    margin-top: -15px;
+    font-family: Furore;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 90px;
+    line-height: 104px;
+    margin-bottom: 30px;
+}
+
+.main-referrals__h2 {
+    font-family: Furore;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 50px;
+    line-height: 58px;
+}
+
+.main-referrals__title {
+    font-family: Furore;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 35px;
+    line-height: 40px;
+    margin-bottom: 30px;
+}
+
+.main-referrals__info {
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 32px;
+}
