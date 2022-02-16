@@ -7,6 +7,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CoinJects</title>
     <link rel="stylesheet" href="/assets/css/style.css">
+
+    <script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script src="/assets/slick/slick.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="/assets/slick/slick.css" />
+    <link rel="stylesheet" type="text/css" href="/assets/slick/slick-theme.css" />
+
 </head>
 
 <body>
@@ -31,26 +37,67 @@
             <div class="portal__info">Learn more about Artificial Intelligence, AI Arbitrage trading and Cryptocurrency
             </div>
             <div class="portal-slider">
-                <div class="portal-slider__card rose-gold">
-                    <div class="portal-slider__wrapper">
-                        <div class="portal-slider__title">How does Artificial Intelligence technology work?
+                <div class="portal-slider__card ">
+                    <div class="portal-slider__wrapper ">
+                        <div class="slide rose-gold">
+                            <div class="portal-slider__title">How does Artificial Intelligence technology work?
+                            </div>
+                            <div class="portal-slider__info">The use of AI has completely revolutionized the field of
+                                trading. The
+                                technology allows you to process a huge amount of data, analyze their trading algorithms
+                                and
+                                make forecasts. It is important that the system is constantly self-learning, increasing
+                                the
+                                speed of data processing and increasing the efficiency of transactions. According to
+                                statistics,
+                                in the US, more than 80% of all transactions on arbitrage platforms are made by
+                                automated
+                                systems based on AI.
+                            </div>
                         </div>
-                        <div class="portal-slider__info">The use of AI has completely revolutionized the field of trading. The
-                            technology allows you to process a huge amount of data, analyze their trading algorithms and
-                            make forecasts. It is important that the system is constantly self-learning, increasing the
-                            speed of data processing and increasing the efficiency of transactions. According to statistics,
-                            in the US, more than 80% of all transactions on arbitrage platforms are made by automated
-                            systems based on AI.
+                        <div class="slide gold">
+                            <div class="portal-slider__title">What is the essence of Arbitrage Trading?
+
+                            </div>
+                            <div class="portal-slider__info">Trading on the digital currency exchange involves making a profit on the difference in the purchase and sale of the cryptocurrency exchange rate on various exchanges.
+
+                            </div>
+                        </div>
+                        <div class="slide gray">
+                            <div class="portal-slider__title">What does "cryptocurrency" mean?
+
+                            </div>
+                            <div class="portal-slider__info">Cryptocurrency is a kind of digital currency that is not backed by a material form (national currencies, gold, oil, etc.). The system is decentralized and self-regulating. The turnover of cryptocurrencies occurs automatically and is completely anonymous. Analysts predict the gradual replacement of national currencies by digital money, which will give people more opportunities and freedom.
+
+                            </div>
+                        </div>
+                        <div class="slide red">
+                            <div class="portal-slider__title">What you need to know about Bitcoin?
+                            </div>
+                            <div class="portal-slider__info">It is the first digital payment system with the unit of circulation Bitcoin, created in 2009. Bitcoin exists outside the government, the banking system, and any intermediaries that could control transactions.
+
+                            </div>
+                        </div>
+                        <div class="slide blue">
+                            <div class="portal-slider__title">How to make money on the cryptocurrency exchange?
+
+                            </div>
+                            <div class="portal-slider__info">Our trading platform is a leader in dozens of countries in the US, Europe and Asia. To start earning on the sale and purchase of popular digital currencies such as Ethereum and Bitcoin, you just need to create an account in CionJects, go through verification and replenish your account. It is easy to top-up your e-wallet using your national currency.
+
+                            </div>
                         </div>
                     </div>
                     <div class="portal-slider__navigation">
-                        <img src="/assets/img/arrow-right.svg" class="arrow-left" alt="left">
-                        <img src="/assets/img/arrow-right.svg" class="arrow-right" alt="right">
+                        <img src="/assets/img/arrow-right.svg" id="prev" class="arrow-left" alt="left">
+                        <img src="/assets/img/arrow-right.svg" id="next" class="arrow-right" alt="right">
                     </div>
                 </div>
                 <div class="portal-slider__video-title">short video about AI</div>
                 <div class="portal-slider__video">
-                    <iframe width="1160" height="600" id="video" src="https://www.youtube.com/embed/0kVvJnM7jr8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    <iframe width="1160" height="600" id="video" src="https://www.youtube.com/embed/0kVvJnM7jr8"
+                        title="YouTube video player" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen></iframe>
                 </div>
             </div>
         </div>
@@ -89,7 +136,9 @@
         </div>
         <div class="footer-copyright">Copyright © 2018–2022 Coinjects. All Rights Reserved</div>
     </footer>
-    <script src="/assets/scripts/main.js"></script>
+
+    <!-- scripts -->
+    <script src="/assets/scripts/slider.js"></script>
 </body>
 
 </html>

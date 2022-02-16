@@ -1034,14 +1034,14 @@ template {
   position: relative;
 }
 
-.portal-slider__card:after {
+.rose-gold:after {
   content: "";
   position: absolute;
   width: 350px;
   height: 300px;
   top: 10%;
-  right: -10%;
-  background: linear-gradient(90deg, #13547A 0%, #80D0C7 100%);
+  right: -40%;
+  background: linear-gradient(90deg, #FAD0C4 0%, #FAD0C4 1%, #FFD1FF 100%);
   transform: rotate(109deg);
   opacity: .6;
   border-radius: 50%;
@@ -1052,6 +1052,91 @@ template {
   /* Opera 9.6+ */
   background-size: 100%;
   /* Современные браузеры */
+}
+
+.gold::after {
+  content: "";
+  position: absolute;
+  width: 350px;
+  height: 300px;
+  top: 10%;
+  right: -40%;
+  background: linear-gradient(90deg, #F6D365 0%, #FDA085 100%);
+  transform: rotate(109deg);
+  opacity: .6;
+  border-radius: 50%;
+  filter: blur(70px);
+  z-index: -1;
+  /* Firefox 3.6+ */
+  /* Safari 3.1+ и Chrome 4.0+ */
+  /* Opera 9.6+ */
+  background-size: 100%;
+  /* Современные браузеры */
+}
+
+.gray::after {
+  content: "";
+  position: absolute;
+  width: 350px;
+  height: 300px;
+  top: 10%;
+  right: -40%;
+  background: linear-gradient(90deg, #A1C4FD 0%, #C2E9FB 100%);
+  transform: rotate(109deg);
+  opacity: .6;
+  border-radius: 50%;
+  filter: blur(70px);
+  z-index: -1;
+  /* Firefox 3.6+ */
+  /* Safari 3.1+ и Chrome 4.0+ */
+  /* Opera 9.6+ */
+  background-size: 100%;
+  /* Современные браузеры */
+}
+
+.red::after {
+  content: "";
+  position: absolute;
+  width: 350px;
+  height: 300px;
+  top: 10%;
+  right: -40%;
+  background: linear-gradient(90deg, #F093FB 0%, #F5576C 100%);
+  transform: rotate(109deg);
+  opacity: .6;
+  border-radius: 50%;
+  filter: blur(70px);
+  z-index: -1;
+  /* Firefox 3.6+ */
+  /* Safari 3.1+ и Chrome 4.0+ */
+  /* Opera 9.6+ */
+  background-size: 100%;
+  /* Современные браузеры */
+}
+
+.blue::after {
+  content: "";
+  position: absolute;
+  width: 350px;
+  height: 300px;
+  top: 10%;
+  right: -40%;
+  background: linear-gradient(90deg, #4FACFE 0%, #00F2FE 100%);
+  transform: rotate(109deg);
+  opacity: .6;
+  border-radius: 50%;
+  filter: blur(70px);
+  z-index: -1;
+  /* Firefox 3.6+ */
+  /* Safari 3.1+ и Chrome 4.0+ */
+  /* Opera 9.6+ */
+  background-size: 100%;
+  /* Современные браузеры */
+}
+
+.portal-slider__wrapper {
+  width: 900px;
+  position: relative;
 }
 
 .portal-slider__info {
