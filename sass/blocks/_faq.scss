@@ -54,6 +54,7 @@
 .faq-card {
     padding: 30px 0 35px 35px;
     width: 1160px;
+    height: 90px;
     display: flex;
     justify-content: space-between;
     background: radial-gradient(136.52% 329.37% at -11% 50%, rgba(255, 255, 255, 0.093) 0%, rgba(255, 255, 255, 0) 100%, rgba(255, 255, 255, 0) 100%);
@@ -62,6 +63,11 @@
     border-radius: 2px;
     margin-bottom: 20px;
     cursor: pointer;
+    transition: .4s;
+}
+
+.faq-card.active {
+    height: 170px;
 }
 
 .faq-card__title {
@@ -104,11 +110,12 @@
 }
 
 .active .faq-card__info {
-    display: flex;
+    opacity: 1;
+    transition: .7s;
 }
 
 .faq-card__info {
-    display: none;
+    opacity: 0;
 }
 
 .faq-icons__plus {
