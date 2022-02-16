@@ -6,6 +6,7 @@
 body {
   background-color: #000000;
   color: #F2F2F2;
+  overflow-x: hidden;
 }
 
 body a {
@@ -842,7 +843,7 @@ template {
   position: relative;
   margin: 40px auto 430px auto;
   border: 1px solid #FFFFFF;
-  padding: 30px 200px 60px 60px;
+  padding: 30px 200px 10px 60px;
   background: radial-gradient(136.52% 329.37% at -11% 50%, rgba(255, 255, 255, 0.093) 0%, rgba(255, 255, 255, 0) 100%, rgba(255, 255, 255, 0) 100%);
   border: 1px solid rgba(255, 255, 255, 0.5);
   box-sizing: border-box;
@@ -911,4 +912,322 @@ template {
   font-weight: normal;
   font-size: 18px;
   line-height: 22px;
+}
+
+.assuranse .container {
+  margin-top: 100px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  color: #F2F2F2;
+}
+
+.assuranse-wrapper__title {
+  font-family: Furore;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 60px;
+  line-height: 69px;
+}
+
+.assuranse-card {
+  position: relative;
+  margin: 40px auto 150px auto;
+  border: 1px solid #FFFFFF;
+  padding: 30px 200px 10px 60px;
+  background: radial-gradient(136.52% 329.37% at -11% 50%, rgba(255, 255, 255, 0.093) 0%, rgba(255, 255, 255, 0) 100%, rgba(255, 255, 255, 0) 100%);
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  box-sizing: border-box;
+  border-radius: 2px;
+}
+
+.assuranse-card::after {
+  content: "";
+  position: absolute;
+  width: 250px;
+  height: 200px;
+  bottom: -10%;
+  right: -10%;
+  background: linear-gradient(90deg, #667EEA 0%, #764BA2 100%);
+  transform: rotate(109deg);
+  opacity: .4;
+  border-radius: 50%;
+  filter: blur(70px);
+  z-index: -1;
+  /* Firefox 3.6+ */
+  /* Safari 3.1+ и Chrome 4.0+ */
+  /* Opera 9.6+ */
+  background-size: 100%;
+  /* Современные браузеры */
+}
+
+.assuranse-card__item {
+  margin-bottom: 40px;
+  width: 900px;
+  align-items: start;
+}
+
+.assuranse-card__item--title {
+  margin-bottom: 10px;
+  font-family: Furore;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 25px;
+  line-height: 29px;
+}
+
+.assuranse-card__item--info {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 22px;
+}
+
+.portal .container {
+  margin-top: 100px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-between;
+  color: #F2F2F2;
+}
+
+.portal__title {
+  width: 534px;
+  font-family: Furore;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 60px;
+  line-height: 69px;
+  margin-bottom: 20px;
+}
+
+.portal__info {
+  width: 650px;
+  font-family: Furore;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 25px;
+  line-height: 29px;
+  text-transform: uppercase;
+  margin-bottom: 100px;
+}
+
+.portal-slider {
+  display: flex;
+  flex-direction: column;
+}
+
+.portal-slider__card {
+  width: 1160px;
+  height: 410px;
+  display: flex;
+  padding: 30px 60px 30px 60px;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-between;
+  background: radial-gradient(136.52% 329.37% at -11% 50%, rgba(255, 255, 255, 0.093) 0%, rgba(255, 255, 255, 0) 100%, rgba(255, 255, 255, 0) 100%);
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  margin-bottom: 200px;
+  position: relative;
+}
+
+.portal-slider__card:after {
+  content: "";
+  position: absolute;
+  width: 350px;
+  height: 300px;
+  top: 10%;
+  right: -10%;
+  background: linear-gradient(90deg, #13547A 0%, #80D0C7 100%);
+  transform: rotate(109deg);
+  opacity: .6;
+  border-radius: 50%;
+  filter: blur(70px);
+  z-index: -1;
+  /* Firefox 3.6+ */
+  /* Safari 3.1+ и Chrome 4.0+ */
+  /* Opera 9.6+ */
+  background-size: 100%;
+  /* Современные браузеры */
+}
+
+.portal-slider__info {
+  width: 822px;
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 22px;
+}
+
+.portal-slider__title {
+  width: 530px;
+  font-family: Furore;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 25px;
+  line-height: 29px;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+}
+
+.portal-slider__navigation {
+  display: flex;
+  justify-content: space-between;
+  align-self: flex-end;
+  width: 100px;
+}
+
+.portal-slider__navigation .arrow-left,
+.portal-slider__navigation .arrow-right {
+  cursor: pointer;
+}
+
+.portal-slider__navigation .arrow-left {
+  transform: rotate(180deg);
+}
+
+.portal-slider__video {
+  width: 1160px;
+  height: 600px;
+  background: radial-gradient(136.52% 329.37% at -11% 50%, rgba(255, 255, 255, 0.093) 0%, rgba(255, 255, 255, 0) 100%, rgba(255, 255, 255, 0) 100%);
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  box-sizing: border-box;
+  margin-bottom: 100px;
+}
+
+.portal-slider__video source {
+  width: 100%;
+}
+
+.portal-slider__video-title {
+  font-family: Furore;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 60px;
+  line-height: 69px;
+  text-transform: uppercase;
+  margin-bottom: 40px;
+}
+
+.faq .container {
+  margin: 100px auto 150px auto;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-between;
+  color: #F2F2F2;
+  position: relative;
+}
+
+.faq .container::after {
+  content: "";
+  position: absolute;
+  width: 250px;
+  height: 200px;
+  top: 40%;
+  right: -10%;
+  background: linear-gradient(90deg, #FF8177 0%, #FF867A 0%, #FF8C7F 21%, #F99185 52%, #CF556C 78%, #B12A5B 100%);
+  transform: rotate(109deg);
+  opacity: .4;
+  border-radius: 50%;
+  filter: blur(70px);
+  z-index: -1;
+  /* Firefox 3.6+ */
+  /* Safari 3.1+ и Chrome 4.0+ */
+  /* Opera 9.6+ */
+  background-size: 100%;
+  /* Современные браузеры */
+}
+
+.faq__title {
+  margin-bottom: 40px;
+  font-family: Furore;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 60px;
+  line-height: 69px;
+  text-transform: uppercase;
+}
+
+.faq__info {
+  margin-bottom: 60px;
+  font-family: Furore;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 25px;
+  line-height: 29px;
+  text-transform: uppercase;
+}
+
+.faq-card {
+  padding: 30px 0 35px 35px;
+  width: 1160px;
+  display: flex;
+  justify-content: space-between;
+  background: radial-gradient(136.52% 329.37% at -11% 50%, rgba(255, 255, 255, 0.093) 0%, rgba(255, 255, 255, 0) 100%, rgba(255, 255, 255, 0) 100%);
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  box-sizing: border-box;
+  border-radius: 2px;
+  margin-bottom: 20px;
+  cursor: pointer;
+}
+
+.faq-card__title {
+  font-family: Furore;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 25px;
+  line-height: 29px;
+  text-transform: uppercase;
+  margin-bottom: 0;
+}
+
+.faq-card__info {
+  width: 840px;
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 22px;
+}
+
+.faq-card__icons {
+  display: flex;
+  flex-direction: column;
+  margin-right: 45px;
+  margin-top: 10px;
+}
+
+.active .faq-icons__cross {
+  display: block;
+}
+
+.active .faq-icons__plus {
+  display: none;
+}
+
+.active .faq-card__title {
+  margin-bottom: 10px;
+}
+
+.active .faq-card__info {
+  display: flex;
+}
+
+.faq-card__info {
+  display: none;
+}
+
+.faq-icons__plus {
+  display: block;
+  height: 18px;
+  width: 18px;
+}
+
+.faq-icons__cross {
+  display: none;
 }

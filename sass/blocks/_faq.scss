@@ -1,0 +1,122 @@
+.faq .container {
+    margin: 100px auto 150px auto;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+    color: $primary-white;
+    position: relative;
+}
+
+.faq .container::after {
+    content: "";
+    position: absolute;
+    width: 250px;
+    height: 200px;
+    top: 40%;
+    right: -10%;
+    background: linear-gradient(90deg, #FF8177 0%, #FF867A 0%, #FF8C7F 21%, #F99185 52%, #CF556C 78%, #B12A5B 100%);
+    transform: rotate(109deg);
+    opacity: .4;
+    border-radius: 50%;
+    filter: blur(70px);
+    z-index: -1;
+    -moz-background-size: 100%;
+    /* Firefox 3.6+ */
+    -webkit-background-size: 100%;
+    /* Safari 3.1+ и Chrome 4.0+ */
+    -o-background-size: 100%;
+    /* Opera 9.6+ */
+    background-size: 100%;
+    /* Современные браузеры */
+}
+
+.faq__title {
+    margin-bottom: 40px;
+    font-family: Furore;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 60px;
+    line-height: 69px;
+    text-transform: uppercase;
+}
+
+.faq__info {
+    margin-bottom: 60px;
+    font-family: Furore;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 25px;
+    line-height: 29px;
+    text-transform: uppercase;
+}
+
+.faq-card {
+    padding: 30px 0 35px 35px;
+    width: 1160px;
+    display: flex;
+    justify-content: space-between;
+    background: radial-gradient(136.52% 329.37% at -11% 50%, rgba(255, 255, 255, 0.093) 0%, rgba(255, 255, 255, 0) 100%, rgba(255, 255, 255, 0) 100%);
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    box-sizing: border-box;
+    border-radius: 2px;
+    margin-bottom: 20px;
+    cursor: pointer;
+}
+
+.faq-card__title {
+    font-family: Furore;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 25px;
+    line-height: 29px;
+    text-transform: uppercase;
+    margin-bottom: 0;
+}
+
+.faq-card__info {
+    width: 840px;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 22px;
+}
+
+.faq-card__icons {
+    display: flex;
+    flex-direction: column;
+    margin-right: 45px;
+    margin-top: 10px;
+}
+
+// отображение иконок плюс и закрытие для открытых и закрытых карточек / отображение блока info
+.active .faq-icons__cross {
+    display: block;
+}
+
+.active .faq-icons__plus {
+    display: none;
+}
+
+.active .faq-card__title {
+    margin-bottom: 10px;
+}
+
+.active .faq-card__info {
+    display: flex;
+}
+
+.faq-card__info {
+    display: none;
+}
+
+.faq-icons__plus {
+    display: block;
+    height: 18px;
+    width: 18px;
+}
+
+.faq-icons__cross {
+    display: none;
+}

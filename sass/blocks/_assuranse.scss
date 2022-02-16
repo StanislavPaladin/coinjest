@@ -1,0 +1,73 @@
+.assuranse .container {
+    margin-top: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    color: $primary-white
+}
+
+.assuranse-wrapper__title {
+    font-family: Furore;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 60px;
+    line-height: 69px;
+}
+
+.assuranse-card {
+    position: relative;
+    margin: 40px auto 150px auto;
+    border: 1px solid $pure-white;
+    padding: 30px 200px 10px 60px;
+    background: radial-gradient(136.52% 329.37% at -11% 50%, rgba(255, 255, 255, 0.093) 0%, rgba(255, 255, 255, 0) 100%, rgba(255, 255, 255, 0) 100%);
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    box-sizing: border-box;
+    border-radius: 2px;
+}
+
+.assuranse-card::after {
+    content: "";
+    position: absolute;
+    width: 250px;
+    height: 200px;
+    bottom: -10%;
+    right: -10%;
+    background: linear-gradient(90deg, #667EEA 0%, #764BA2 100%);
+    transform: rotate(109deg);
+    opacity: .4;
+    border-radius: 50%;
+    filter: blur(70px);
+    z-index: -1;
+    -moz-background-size: 100%;
+    /* Firefox 3.6+ */
+    -webkit-background-size: 100%;
+    /* Safari 3.1+ и Chrome 4.0+ */
+    -o-background-size: 100%;
+    /* Opera 9.6+ */
+    background-size: 100%;
+    /* Современные браузеры */
+}
+
+.assuranse-card__item {
+    margin-bottom: 40px;
+    width: 900px;
+    align-items: start;
+}
+
+.assuranse-card__item--title {
+    margin-bottom: 10px;
+    font-family: Furore;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 25px;
+    line-height: 29px;
+}
+
+.assuranse-card__item--info {
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 22px;
+}
