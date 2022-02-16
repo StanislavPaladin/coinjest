@@ -53,19 +53,38 @@
 
 }
 
-.main-card::after {
+.neon-green::after {
     content: "";
     position: absolute;
     width: 250px;
     height: 270px;
-    border: 1px solid red;
     top: 15%;
     right: 0;
     background: linear-gradient(90deg, #37ECBA 0%, #72AFD3 100%);
     opacity: 1;
     filter: blur(130px);
     z-index: -1;
-    /* background: url('../src/img/background/hero-bg.png') bottom no-repeat; */
+    -moz-background-size: 100%;
+    /* Firefox 3.6+ */
+    -webkit-background-size: 100%;
+    /* Safari 3.1+ и Chrome 4.0+ */
+    -o-background-size: 100%;
+    /* Opera 9.6+ */
+    background-size: 100%;
+    /* Современные браузеры */
+}
+
+.neon-blue::after {
+    content: "";
+    position: absolute;
+    width: 250px;
+    height: 270px;
+    top: 15%;
+    right: 0;
+    background: linear-gradient(90deg, #48C6EF 0%, #6F86D6 100%);
+    opacity: 1;
+    filter: blur(130px);
+    z-index: -1;
     -moz-background-size: 100%;
     /* Firefox 3.6+ */
     -webkit-background-size: 100%;
@@ -175,18 +194,16 @@
 .main-about::after{
     content: "";
     position: absolute;
-    width: 500px;
-    height: 570px;
-    border: 1px solid red;
-    top: -200px;
-    left: 100%;
+    width: 450px;
+    height: 650px;
+    top: -180px;
+    left: 120%;
     background: linear-gradient(90deg, rgba(106, 17, 203, 0.6) 0%, rgba(37, 117, 252, 0.6) 100%);
     border-radius: 50%;
     opacity: .5;
     filter: blur(100px);
     transform: rotate(20.81deg);
     z-index: -1;
-    /* background: url('../src/img/background/hero-bg.png') bottom no-repeat; */
     -moz-background-size: 100%;
     /* Firefox 3.6+ */
     -webkit-background-size: 100%;
