@@ -39,7 +39,7 @@
 
 .main-card {
     position: relative;
-    width: 1160px;
+    width: 100%;
     height: 300px;
     padding: 30px 100px 30px 60px;
     margin-bottom: 200px;
@@ -118,6 +118,10 @@
     font-weight: normal;
     font-size: 40px;
     line-height: 46px;
+}
+
+.main-card__span{
+    margin-right: 50px;
 }
 
 .main-steps {
@@ -290,7 +294,7 @@
 }
 
 .main-referrals {
-    min-width: 1065px;
+    width: 100%;
     display: flex;
     flex-direction: row;
     align-items: flex-start;

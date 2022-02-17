@@ -15,12 +15,14 @@ $('.portal-slider__wrapper').slick({
 // управление цветами шаров в карточке слайдера
 const currentSlide = document.querySelector('.slick-active');
 const sliderWrapper = document.querySelector('.portal-slider__wrapper');
-
+const prevBtn = document.getElementById('prev');
+const nextBtn = document.getElementById('next');
+prevBtn.addEventListener('click', () => {
+    changeBallsColor();
+})
 function changeBallsColor() {
-    // const colors = ['rose-gold', 'gold', 'gray', 'red', 'blue']
-    // const color = currentSlide.classList[1];
-    // sliderWrapper.classList.add(color);
-    // // sliderWrapper.classList.remove(color);
-    // changeBallsColor()
+    const color = currentSlide.classList[1]
+    sliderWrapper.classList.add(color);
+
 }
 changeBallsColor();

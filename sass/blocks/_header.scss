@@ -6,6 +6,20 @@
     align-items: center;
 }
 
+.header-burger {
+    display: none;
+}
+
+.header-burger__item {
+    width: 30px;
+    height: 2px;
+    background-color: $primary-white;
+    margin: 0;
+}
+.header-burger__item:nth-child(1) {
+    margin-bottom: 5px;
+}
+
 .header-links,
 .header-login {
     display: flex;
