@@ -1,0 +1,145 @@
+// account header
+.header.account {
+    position: relative;
+}
+
+.header-account__wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header-navigation {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header-burger__account {
+    margin: 20px;
+}
+
+.account .header-burger__item {
+    margin-bottom: 3px;
+    width: 20px;
+    height: 2px;
+}
+
+.header-burger__item:nth-last-child(1) {
+    margin-bottom: 0;
+}
+
+.header-navigation__item {
+    font-family: Furore;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 21px;
+}
+
+.header-user {
+    transition: .2s;
+    height: 40px;
+    position: fixed;
+    top: 0;
+    right: 30px;
+    margin-top: 19px;
+    background: radial-gradient(136.52% 329.37% at -11% 50%, rgba(255, 255, 255, 0.093) 0%, rgba(255, 255, 255, 0) 100%, rgba(255, 255, 255, 0) 100%);
+    backdrop-filter: blur(250px);
+}
+
+.header-user__green {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 3px;
+    background-color: $account-green;
+    cursor: pointer;
+
+}
+
+.header-user__hidden {
+    display: none;
+    opacity: 0;
+}
+
+.header-user.active {
+    transition: .2s;
+    opacity: 1;
+    height: 122px;
+}
+
+.header-user.active .header-user__hidden {
+    opacity: 1;
+    display: flex;
+    flex-direction: column;
+    padding-left: 10px;
+    margin-top: 13px;
+}
+
+.header-user__name {
+    font-family: Furore;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 14px;
+    margin-right: 10px;
+    margin-left: 10px;
+}
+
+.header-user__photo {
+    margin-left: 10px;
+    margin-right: 10px;
+    width: 35px;
+    height: 35px;
+}
+
+
+.active .header-user__settings {
+    font-family: Furore;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 14px;
+    margin-bottom: 26px;
+    cursor: pointer;
+}
+
+.active .header-user__logout {
+    font-family: Furore;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 14px;
+    cursor: pointer;
+}
+
+
+// sidebar
+
+.sidebar {
+    width: 257px;
+    height: 100%;
+    border: 1px solid red;
+    background: radial-gradient(136.52% 329.37% at -11% 50%, rgba(255, 255, 255, 0.093) 0%, rgba(255, 255, 255, 0) 100%, rgba(255, 255, 255, 0) 100%);
+    backdrop-filter: blur(250px);
+}
+
+.sidebar-name {}
+
+.sidebar-item {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    margin-bottom: 35px;
+    font-family: Furore;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 16px;
+    border: 1px solid red;
+}
+
+.sidebar-item__icon {}
+
+.sidebar-item__name {}
