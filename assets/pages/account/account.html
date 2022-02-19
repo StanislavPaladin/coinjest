@@ -1,83 +1,191 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Account</title>
     <link rel="stylesheet" href="/assets/css/style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 </head>
+
 <body>
     <header class="header account">
-            <div class="header-account__wrapper">
-                <div class="header-logo"><a href="/index.html"><img src="/assets/img/logo.svg" alt="logo"></a></div>
-                <div class="header-navigation">
-                    <div class="header-burger__account">
-                        <div class="header-burger__item"></div>
-                        <div class="header-burger__item"></div>
-                        <div class="header-burger__item"></div>
-                    </div>
-                        <div class="header-navigation__item">Settings/Wallets</div>
+        <div class="header-account__wrapper">
+            <div class="header-logo"><a href="/index.html"><img src="/assets/img/logo.svg" alt="logo"></a></div>
+            <div class="header-navigation">
+                <div class="header-burger__account">
+                    <div class="header-burger__item"></div>
+                    <div class="header-burger__item"></div>
+                    <div class="header-burger__item"></div>
                 </div>
+                <div class="header-navigation__item">Settings/Wallets</div>
             </div>
-            <div class="header-user">
-                <div class="header-user__green">
-                    <div class="header-user__name">Marjorie Richards</div>
-                    <div class="header-user__arrow"><img src="/assets/icons/triangle.svg" alt="arrow"></div>
-                    <div class="header-user__photo"><img src="/assets/img/avatar.svg" alt="avatar"></div>
-                </div>
-                <div class="header-user__hidden">
-                    <div class="header-user__settings">Settings</div>
-                    <div class="header-user__logout">Log Out</div>
-                </div>
+        </div>
+        <div class="header-user">
+            <div class="header-user__green">
+                <div class="header-user__name">Marjorie Richards</div>
+                <div class="header-user__arrow"><img src="/assets/icons/triangle.svg" alt="arrow"></div>
+                <div class="header-user__photo"><img src="/assets/img/avatar.svg" alt="avatar"></div>
             </div>
+            <div class="header-user__hidden">
+                <div class="header-user__settings">Settings</div>
+                <div class="header-user__logout">Log Out</div>
+            </div>
+        </div>
     </header>
     <aside class="sidebar">
         <div class="sidebar-name">Hello, Name</div>
-        <div class="sidebar-item">
-            <div class="sidebar-item__icon"><img src="/assets/icons/bill.svg" alt="bill" ></div>
+        <div class="sidebar-item active">
+            <div class="sidebar-item__icon"><img src="/assets/icons/bill.svg" alt="bill"></div>
             <div class="sidebar-item__name">Make a Deposit</div>
         </div>
         <div class="sidebar-item">
-            <div class="sidebar-item__icon"><img src="/assets/icons/credit.svg" alt="" ></div>
+            <div class="sidebar-item__icon"><img src="/assets/icons/credit.svg" alt=""></div>
             <div class="sidebar-item__name">Withdraw Funds</div>
         </div>
         <div class="sidebar-item">
-            <div class="sidebar-item__icon"><img src="/assets/icons/refs" alt="" ></div>
+            <div class="sidebar-item__icon"><img src="/assets/icons/refs.svg" alt=""></div>
             <div class="sidebar-item__name">Profile Information</div>
         </div>
         <div class="sidebar-item">
-            <div class="sidebar-item__icon"><img src="/assets/icons/history.svg" alt="" ></div>
+            <div class="sidebar-item__icon"><img src="/assets/icons/history.svg" alt=""></div>
             <div class="sidebar-item__name">Profits History</div>
         </div>
         <div class="sidebar-item">
-            <div class="sidebar-item__icon"><img src="/assets/icons/wallet.svg" alt="" ></div>
+            <div class="sidebar-item__icon"><img src="/assets/icons/wallet.svg" alt=""></div>
             <div class="sidebar-item__name">Deposit History
             </div>
         </div>
         <div class="sidebar-item">
-            <div class="sidebar-item__icon"><img src="/assets/icons/dollar.svg" alt="" ></div>
+            <div class="sidebar-item__icon"><img src="/assets/icons/dollar.svg" alt=""></div>
             <div class="sidebar-item__name">Withdrawal History</div>
         </div>
         <div class="sidebar-item">
-            <div class="sidebar-item__icon"><img src="/assets/icons/graph.svg" alt="" ></div>
+            <div class="sidebar-item__icon"><img src="/assets/icons/graph.svg" alt=""></div>
             <div class="sidebar-item__name">Trade History</div>
         </div>
         <div class="sidebar-item">
-            <div class="sidebar-item__icon"><img src="/assets/icons/refs.svg" alt="" ></div>
+            <div class="sidebar-item__icon"><img src="/assets/icons/refs.svg" alt=""></div>
             <div class="sidebar-item__name">Referrals</div>
         </div>
         <div class="sidebar-item">
-            <div class="sidebar-item__icon"><img src="/assets/icons/cog.svg" alt="" ></div>
+            <div class="sidebar-item__icon"><img src="/assets/icons/cog.svg" alt=""></div>
             <div class="sidebar-item__name">Settings/ Wallets
             </div>
         </div>
         <div class="sidebar-item">
-            <div class="sidebar-item__icon"><img src="/assets/icons/logout.svg" alt="" ></div>
+            <div class="sidebar-item__icon"><img src="/assets/icons/logout.svg" alt=""></div>
             <div class="sidebar-item__name">Logout
             </div>
         </div>
     </aside>
+    <section class="cabinet">
+        <div class="cabinet-container" id="content">
+
+
+            <!-- <div class="welcome flex-start" id="welcome">
+                <div class="welcome-wrapper ">
+                    <div class="big-title">welcome to coinjest</div>
+                    <div class="subtitle">Make your first investement today</div>
+                </div>
+                <button type="button" class="btn__main">get started</button>
+            </div> -->
+
+            <div class="deposit flex-center">
+                <form action="" class="deposit-form card">
+                    <!-- <div class="step" id="setpOne">
+                        <div class="subtitle">Before you can start</div>
+                        <div class="info">your investment, you will first need to deposit money into your personal wallet.
+                            Please include $150 admin charge on your first deposit!</div>
+                        <label for="deposit" class="label">Select Asset to make deposit with</label>
+                        <select name="deposit" id="deposit" class="select">
+                            <img src="/assets/icons/triangle.svg" alt="">
+                            <option disabled>Choose one</option>
+                            <option value="btc">Bitcoin BTC</option>
+                            <option value="eth">Ethereum eth</option>
+                            <option value="btcash">Bitcoin cash</option>
+                            <option value="xrp">ripple xrp</option>
+                        </select>
+                        <div class="input-group">
+                            <div class="input-wrapper">
+                                <label for="amount" class="label">Enter Amount</label>
+                                <input type="text" name="amount" class="input">
+                            </div>
+                            <div class="input-wrapper">
+                                <label for="value" class="label">Selected Coin Value</label>
+                                <input type="text" name="value" class="input">
+                            </div>
+                        </div>
+                        <button type="submit" class="button__long">Submit Deposit</button>
+                        <div class="form-footer">Copyright © 2021 Coin Income Quest. All rights reserved.</div>
+                    </div> -->
+
+                    <div class="step" id="stepTwo">
+                        <div class="subtitle">Select variant</div>
+
+                        <div class="first step-item">
+                            <div class="select">
+                                <option disabled>please select a variant</option>
+                                <option value="withdrawals">withdrawals</option>
+                                <option value="transfers">transfers</option>
+                            </div>
+                            <span class="sublabel">The asset you want to withdraw must be the same as the asset you
+                                deposited with *</span>
+                        </div>
+                        <div class="second step-item">
+                            <label for="second" class="label__small">Select the funds you want to withdraw</label>
+                            <div class="select" name="second">
+                                <option disabled>Please select withdrawal type</option>
+                                <option value="profits">Withdraw Profits</option>
+                                <option value="referal">Withdraw Referral Profits</option>
+                                <option value="capital">Withdraw capital</option>
+                            </div>
+                            <span class="sublabel">The asset you want to withdraw must be the same as the asset you
+                                deposited with *</span>
+                        </div>
+
+                        <div class="third step-item">
+                            <label for="third" class="label__small">Select deposit</label>
+                            <div class="select" name="third">
+                                <option disabled>Choose deposit</option>
+                                <option value="nodeposit">No deposits</option>
+                                <option value="depositId">Deposit</option>
+                            </div>
+                        </div>
+
+                        <div class="fourth step-item">
+                            <label for="fourth" class="label__small">Select Asset to make withdrawal with</label>
+                            <div class="select" name="fourth">
+                                <option disabled>Choose cryptocurrency</option>
+                                <option value="btc">Bitcoin BTC</option>
+                                <option value="eth">ethereum eth</option>
+                                <option value="btcash">bitcoin cash</option>
+                                <option value="xrp">ripple xrp</option>
+                            </div>
+                        </div>
+
+                        <div class="fifth ">
+                            <div class="input-wrapper__big">
+                                <label for="input-amount" class="label__small">Enter amount ($)</label>
+                                <input type="text" class="input" name="input-amount">
+                            </div>
+                            <div class="input-wrapper__big">
+                                <label for="input-address" class="label__small">Enter your Wallet Address</label>
+                                <input type="text" class="input" name="input-address">
+                            </div>
+
+
+
+                        </div>
+                        <button type='submit' class="button__long">withdraw funds</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
     <script src="/assets/scripts/account.js"></script>
 </body>
+
 </html>

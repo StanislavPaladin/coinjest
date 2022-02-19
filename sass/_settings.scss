@@ -2,6 +2,14 @@
     box-sizing: border-box;
 }
 
+// flex
+.flex-start {
+    align-items: start;
+}
+.flex-center {
+    align-items: center;
+}
+
 body {
     background-color: $background-black;
     color: $primary-white;
