@@ -5,6 +5,7 @@
     left: 0;
     width: 100%;
     padding-left: 28px;
+    z-index: 3;
 }
 
 .header-account__wrapper {
@@ -598,9 +599,8 @@ option {
 
 
 .table {
-    padding: 22px;
+    position: relative;
     z-index: -1;
-    width: 645px;
     margin-bottom: 20px;
     border: none;
     border-collapse: collapse;
@@ -609,7 +609,12 @@ option {
 }
 
 .table th {
-    font-weight: bold;
+    padding: 20px 0px 20px 20px;
+    font-family: Furore;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 14px;
     text-align: left;
     background: inherit;
     border: none;
@@ -621,6 +626,114 @@ option {
 }
 
 .table td {
+    padding-left: 20px;
+    padding-right: 20px;
     border: none;
-    padding: 5px;
+    padding-bottom: 10px;
+    font-family: Furore;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 10px;
+    line-height: 12px;
+    color: $account-green;
+}
+
+.table-info__wrapper {
+    width: 522px;
+}
+
+.td.valid {
+    color: $account-green;
+}
+.td.invalid{
+    color: $account-red;
+}
+
+.password-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    width: 430px;
+}
+
+.input__big {
+    width: 430px;
+    color: $pure-white;
+    border: 1px solid $pure-white;
+    background-color: inherit;
+    padding: 13px 0 13px 16px;
+    font-family: Furore;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 14px;
+    margin-bottom: 15px;
+}
+
+.wallet__link {
+    width: 430px;
+    border: 1px solid $pure-white;
+    background-color: inherit;
+    color: $pure-white;
+    padding: 13px 0 13px 16px;
+    font-family: Furore;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 14px;
+}
+
+.vertical {
+    // padding-top: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.table-white {
+    border-spacing: 20px 40px ;
+    width: 660px;
+    background-color: $pure-white;
+    color: #000;
+    margin-bottom: 50px;
+    position: relative;
+    z-index: 0;
+}
+
+.table-white tr{
+    font-size: 14px;
+    line-height: 16px;
+    text-align: center;
+    
+}
+
+.strong {
+    font-weight: bold;
+}
+
+.table-wrapper {
+    width: 660px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+}
+
+.table-navigation {
+    width: 300px;
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+    bottom: 60px;
+    right: 40px;
+    color: #000;
+}
+
+.table-navigation__select option{
+    color: #000;
+    cursor: pointer;
+}
+
+.black {
+    color: red;
 }

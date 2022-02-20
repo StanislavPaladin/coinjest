@@ -3,7 +3,7 @@ $('.portal-slider').slick({
     centerMode: true,
     dots: false,
     slidesToShow: 1,
-    autoplay: false,
+    autoplay: true,
     fade: true,
     autoplaySpeed: 5000,
     slidesToScroll: 1,

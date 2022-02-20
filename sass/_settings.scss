@@ -17,7 +17,7 @@ html {
 body {
     background-color: $background-black;
     color: $primary-white;
-    
+    overflow-x: hidden;
 }
 
 body a {
@@ -57,5 +57,10 @@ body .container {
 // обычное нижнее подчёркивание, на 100% длины элемены
 .link__dashed {
     border-bottom: 1px solid $primary-white;
+}
+
+// margins paddings
+.mt-40 {
+    margin-top: 40px;
 }
 
