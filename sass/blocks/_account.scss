@@ -237,7 +237,7 @@
 
 
 .welcome {
-    margin-left: 50px;
+    margin-left: 80px;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
@@ -500,4 +500,127 @@ option {
 
 .step-item {
     margin-top: 23px;
+}
+
+.label-wrapper {
+    display: flex;
+    flex-direction: column;
+}
+
+.label__mid {
+    font-family: Furore;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 10px;
+    line-height: 12px;
+    margin-bottom: 11px;
+    color: $account-green;
+}
+
+.account-wrapper {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 40px;
+}
+
+.account-wrapper__title {
+    font-family: Furore;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 28px;
+    line-height: 32px;
+    margin-bottom: 20px;
+}
+
+.account-wrapper__span {
+    font-family: Furore;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 14px;
+    margin-bottom: 5px;
+}
+
+.account-wrapper__span .white {
+    color: $pure-white;
+}
+
+.account-wrapper__span .green {
+    color: $account-green;
+}
+
+.buttons-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 500px;
+}
+
+.referral__link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: $pure-white;
+    background-color: $account-green;
+    width: 430px;
+    height: 40px;
+    font-family: Furore;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 14px;
+}
+
+.button-secondary__small {
+    width: 60px;
+    height: 40px;
+    border: 1px solid $account-green;
+    padding: 13px;
+    font-family: Furore;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 14px;
+    background-color: inherit;
+    color: $account-green;
+    cursor: pointer;
+}
+
+.account-span__green {
+    font-family: Furore;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 21px;
+    margin-bottom: 10px;
+    color: $account-green;
+}
+
+
+.table {
+    padding: 22px;
+    z-index: -1;
+    width: 645px;
+    margin-bottom: 20px;
+    border: none;
+    border-collapse: collapse;
+    background: radial-gradient(136.52% 329.37% at -11% 50%, rgba(255, 255, 255, 0.093) 0%, rgba(255, 255, 255, 0) 100%, rgba(255, 255, 255, 0) 100%);
+    backdrop-filter: blur(250px);
+}
+
+.table th {
+    font-weight: bold;
+    text-align: left;
+    background: inherit;
+    border: none;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 14px;
+    color: $primary-white;
+}
+
+.table td {
+    border: none;
+    padding: 5px;
 }

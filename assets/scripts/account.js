@@ -1,8 +1,74 @@
 const userPanel = document.querySelector('.header-user');
 const userTrigger = document.querySelector('.header-user__green');
+const sidebarItem = document.querySelectorAll('.sidebar-item');
+const headerNavigationItem = document.querySelector('.header-navigation__item');
+const welcomeContent = document.querySelector('#content-welcome');
+const depositContent = document.querySelector('#content-deposit');
+const withdrawContent = document.querySelector('#content-withdraw');
+const profileInfoContent = document.querySelector('#content-profile-information');
+const profileHistoryContent = document.querySelector('#content-profile-history');
+const depositHistoryContent = document.querySelector('#content-deposit-history');
+const withdrawalHistoryContent = document.querySelector('#content-withdrawal-history');
+const tradeHistoryContent = document.querySelector('#content-trade-history');
+const referralsContent = document.querySelector('#content-referrals');
+const settingsContent = document.querySelector('#content-settings');
+const walletLink = document.getElementById('wallet-link');
+const copyBtn = document.getElementById('copy-btn')
+const content = [welcomeContent, depositContent, withdrawContent, profileInfoContent, profileHistoryContent, depositHistoryContent, withdrawalHistoryContent, tradeHistoryContent, referralsContent, settingsContent];
 
+// изначальное состояние сайдбара и отображаемого контента
+function initContent() {
+    sidebarItem.forEach(item => item.classList.remove('active'));
+    content.forEach(item => item.style.display="none");
+    welcomeContent.style.display="block";
+}
+initContent();
+
+// user panel в хедере
 userTrigger.addEventListener('click', () => userPanel.classList.toggle('active'));
+// сайдбар, управление отображаемым контентом в админке
+sidebarItem.forEach(item => item.addEventListener('click', (e) => {
+    sidebarItem.forEach(item => item.classList.remove('active'));
+    item.classList.add('active');
+    headerNavigationItem.textContent = item.textContent;
+    content.forEach(item => item.style.display="none");
 
+    window.scrollTo(0,0)
+
+    if(item.id == 'deposit') {
+        depositContent.style.display="block"
+    } else if (item.id=="withdraw") {
+        withdrawContent.style.display="block"
+    } 
+    else if (item.id=="profile-information") {
+        profileInfoContent.style.display="block"
+    } 
+    else if (item.id=="profile-history") {
+        profileHistoryContent.style.display="block"
+    } 
+    else if (item.id=="deposit-history") {
+        depositHistoryContent.style.display="block"
+    } 
+    else if (item.id=="withdrawal-history") {
+        withdrawalHistoryContent.style.display="block"
+    } 
+    else if (item.id=="trade-history") {
+        tradeHistoryContent.style.display="block"
+    } 
+    else if (item.id=="referrals") {
+        referralsContent.style.display="block"
+    } 
+    else if (item.id=="settings") {
+        settingsContent.style.display="block"
+    } 
+
+}))
+
+
+// копирование в буфер обмена линка на кошелёк
+copyBtn.addEventListener('click', () => {
+    navigator.clipboard.writeText(walletLink.textContent)
+})
 
 // кастомизация селекта
 $('.select').each(function () {

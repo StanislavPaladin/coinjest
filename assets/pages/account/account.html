@@ -20,7 +20,7 @@
                     <div class="header-burger__item"></div>
                     <div class="header-burger__item"></div>
                 </div>
-                <div class="header-navigation__item">Settings/Wallets</div>
+                <div class="header-navigation__item">Make a deposit</div>
             </div>
         </div>
         <div class="header-user">
@@ -37,45 +37,45 @@
     </header>
     <aside class="sidebar">
         <div class="sidebar-name">Hello, Name</div>
-        <div class="sidebar-item active">
+        <div class="sidebar-item" id="deposit">
             <div class="sidebar-item__icon"><img src="/assets/icons/bill.svg" alt="bill"></div>
             <div class="sidebar-item__name">Make a Deposit</div>
         </div>
-        <div class="sidebar-item">
+        <div class="sidebar-item" id="withdraw">
             <div class="sidebar-item__icon"><img src="/assets/icons/credit.svg" alt=""></div>
             <div class="sidebar-item__name">Withdraw Funds</div>
         </div>
-        <div class="sidebar-item">
+        <div class="sidebar-item" id="profile-information">
             <div class="sidebar-item__icon"><img src="/assets/icons/refs.svg" alt=""></div>
             <div class="sidebar-item__name">Profile Information</div>
         </div>
-        <div class="sidebar-item">
+        <div class="sidebar-item" id="profile-history">
             <div class="sidebar-item__icon"><img src="/assets/icons/history.svg" alt=""></div>
             <div class="sidebar-item__name">Profits History</div>
         </div>
-        <div class="sidebar-item">
+        <div class="sidebar-item" id="deposit-history">
             <div class="sidebar-item__icon"><img src="/assets/icons/wallet.svg" alt=""></div>
             <div class="sidebar-item__name">Deposit History
             </div>
         </div>
-        <div class="sidebar-item">
+        <div class="sidebar-item" id="withdrawal-history">
             <div class="sidebar-item__icon"><img src="/assets/icons/dollar.svg" alt=""></div>
             <div class="sidebar-item__name">Withdrawal History</div>
         </div>
-        <div class="sidebar-item">
+        <div class="sidebar-item" id="trade-history">
             <div class="sidebar-item__icon"><img src="/assets/icons/graph.svg" alt=""></div>
             <div class="sidebar-item__name">Trade History</div>
         </div>
-        <div class="sidebar-item">
+        <div class="sidebar-item" id="referrals">
             <div class="sidebar-item__icon"><img src="/assets/icons/refs.svg" alt=""></div>
             <div class="sidebar-item__name">Referrals</div>
         </div>
-        <div class="sidebar-item">
-            <div class="sidebar-item__icon"><img src="/assets/icons/cog.svg" alt=""></div>
+        <div class="sidebar-item" id="settings">
+            <div class="sidebar-item__icon" id="settings"><img src="/assets/icons/cog.svg" alt=""></div>
             <div class="sidebar-item__name">Settings/ Wallets
             </div>
         </div>
-        <div class="sidebar-item">
+        <div class="sidebar-item" id="logout">
             <div class="sidebar-item__icon"><img src="/assets/icons/logout.svg" alt=""></div>
             <div class="sidebar-item__name">Logout
             </div>
@@ -83,21 +83,20 @@
     </aside>
     <section class="cabinet">
         <div class="cabinet-container" id="content">
-
-
-            <!-- <div class="welcome flex-start" id="welcome">
+            <div class="welcome " id="content-welcome">
                 <div class="welcome-wrapper ">
                     <div class="big-title">welcome to coinjest</div>
                     <div class="subtitle">Make your first investement today</div>
                 </div>
                 <button type="button" class="btn__main">get started</button>
-            </div> -->
+            </div>
 
-            <div class="deposit flex-center">
+            <div class="deposit flex-center" id="content-deposit">
                 <form action="" class="deposit-form card">
-                    <!-- <div class="step" id="setpOne">
+                    <div class="step" id="setpOne">
                         <div class="subtitle">Before you can start</div>
-                        <div class="info">your investment, you will first need to deposit money into your personal wallet.
+                        <div class="info">your investment, you will first need to deposit money into your personal
+                            wallet.
                             Please include $150 admin charge on your first deposit!</div>
                         <label for="deposit" class="label">Select Asset to make deposit with</label>
                         <select name="deposit" id="deposit" class="select">
@@ -120,7 +119,7 @@
                         </div>
                         <button type="submit" class="button__long">Submit Deposit</button>
                         <div class="form-footer">Copyright © 2021 Coin Income Quest. All rights reserved.</div>
-                    </div> -->
+                    </div>
 
                     <div class="step" id="stepTwo">
                         <div class="subtitle">Select variant</div>
@@ -183,6 +182,253 @@
                     </div>
                 </form>
             </div>
+            <div class="deposit flex-center" id="content-withdraw">
+                <form action="" class="deposit-form card">
+                    <div class="step" id="stepTwo">
+                        <div class="subtitle">Select variant</div>
+                        <div class="first step-item">
+                            <div class="select">
+                                <option disabled>please select a variant</option>
+                                <option value="withdrawals">withdrawals</option>
+                                <option value="transfers">transfers</option>
+                            </div>
+                            <span class="sublabel">The asset you want to withdraw must be the same as the asset you
+                                deposited with *</span>
+                        </div>
+                        <div class="second step-item">
+                            <div class="label-wrapper">
+                                <label for="second" class="label__mid">Only 30% capital is transferable. Note you will
+                                    lose all
+                                    your weekly profits if cycle is incomplete during transfer. And any paid profits
+                                    will be
+                                    deducted from transferred capital component.</label>
+                                <label for="second" class="label__small">Transfer from</label>
+                            </div>
+                            <div class="select" name="second">
+                                <option disabled>Please select transfer type</option>
+                                <option value="profits">transfer Profits</option>
+                                <option value="referal">transfer Referral Profits</option>
+                                <option value="capital">transfer capital</option>
+                            </div>
+                        </div>
+                        <div class="third step-item">
+                            <label for="third" class="label__small">Select deposit</label>
+                            <div class="select" name="third">
+                                <option disabled>Choose deposit</option>
+                                <option value="nodeposit">No deposits</option>
+                                <option value="depositId">Deposit</option>
+                            </div>
+                        </div>
+                        <div class="fifth ">
+                            <div class="input-wrapper__big">
+                                <label for="input-address" class="label__small">Enter user's ID</label>
+                                <input type="text" class="input" name="input-address">
+                            </div>
+                            <div class="input-wrapper__big">
+                                <label for="input-amount" class="label__small">Enter amount ($)</label>
+                                <input type="text" class="input" name="input-amount">
+                            </div>
+                        </div>
+                        <button type='submit' class="button__long">withdraw funds</button>
+                    </div>
+                </form>
+            </div>
+            <div class="welcome" id="content-profile-information">
+                <div class="account-wrapper">
+                    <div class="account-wrapper__title">Personal information
+                    </div>
+                    <div class="account-wrapper__span">
+                        <span class="white">Username/ID: </span>
+                        <span class="green">name name</span>
+                    </div>
+                    <div class="account-wrapper__span">
+                        <span class="white">Registration date:</span>
+                        <span class="green">2022/02/22</span>
+                    </div>
+                    <div class="account-wrapper__span">
+                        <span class="white">Full name:</span>
+                        <span class="green">Full name</span>
+                    </div>
+                    <div class="account-wrapper__span">
+                        <span class="white">Received Balance:</span>
+                        <span class="green">$666</span>
+                    </div>
+                </div>
+                <div class="account-wrapper">
+                    <div class="account-wrapper__title">Account summary
+                    </div>
+                    <div class="account-wrapper__span">
+                        <span class="white">Total amount of initial Deposit:</span>
+                        <span class="green">$666</span>
+                    </div>
+                    <div class="account-wrapper__span">
+                        <span class="white">Total amount of initial Deposit:</span>
+                        <span class="green">$666</span>
+                    </div>
+                    <div class="account-wrapper__span">
+                        <span class="white">Total amount of Profits:
+                        </span>
+                        <span class="green">$666</span>
+                    </div>
+                    <div class="account-wrapper__span">
+                        <span class="white">Total amount of Referral Profits:
+                        </span>
+                        <span class="green">$666</span>
+                    </div>
+                </div>
+                <div class="account-wrapper">
+                    <div class="account-wrapper__title">Withdrawal Summary
+                    </div>
+                    <div class="account-wrapper__span">
+                        <span class="white">Total number of Withdrawals: </span>
+                        <span class="green">6</span>
+                    </div>
+                    <div class="account-wrapper__span">
+                        <span class="white">Total number of Withdrawals:</span>
+                        <span class="green">0.06</span>
+                    </div>
+                    <div class="account-wrapper__span">
+                        <span class="white">Total number of Withdrawals:</span>
+                        <span class="green">0.06</span>
+                    </div>
+                    <div class="account-wrapper__span">
+                        <span class="white">Total number of Withdrawals:</span>
+                        <span class="green">0.06</span>
+                    </div>
+                </div>
+                <div class="account-wrapper">
+                    <span class="account-span__green">Copy your referral link below:</span>
+                    <div class="buttons-wrapper">
+                        <div class="referral__link" id="wallet-link">https://coinincomequest.com/register?referralId=666
+                        </div>
+                        <div class="button-secondary__small" id="copy-btn">copy</div>
+                    </div>
+                </div>
+
+            </div>
+            <div class="welcome" id="content-profile-history">
+                <div class="account-wrapper">
+                    <div class="account-wrapper__title">Summary of Monthly Profits
+                    </div>
+                    <div class="account-wrapper__span">
+                        <span class="white">Total number of Received Profits:</span>
+                        <span class="green">0</span>
+                    </div>
+                    <div class="account-wrapper__span">
+                        <span class="white">Total number of Received Profits:</span>
+                        <span class="green">0.06</span>
+                    </div>
+                    <div class="account-wrapper__span">
+                        <span class="white">Total Amount of available Profits:
+                        </span>
+                        <span class="green">0.06</span>
+                    </div>
+                </div>
+
+                <table class="table">
+                    <thead class="thead">
+                        <tr class="tr">
+                            <th class="th">INVESTMENT NUMBER</th>
+                            <th class="th">START DATE</th>
+                            <th class="th">AMOUNT (USD)</th>
+                            <th class="th">PROFIT</th>
+                            <th class="th">MONTH</th>
+                        </tr>
+                    </thead>
+                    <tbody class="tbody">
+                        <tr class="tr">
+                            <td class="td">4324234232</td>
+                            <td class="td">2022/02/22</td>
+                            <td class="td">$6666</td>
+                            <td class="td">$432</td>
+                            <td class="td">12</td>
+                        </tr>
+                        <tr class="tr">
+                            <td class="td">4324234232</td>
+                            <td class="td">2022/02/22</td>
+                            <td class="td">$6666</td>
+                            <td class="td">$432</td>
+                            <td class="td">12</td>
+                        </tr>
+                        <tr class="tr">
+                            <td class="td">4324234232</td>
+                            <td class="td">2022/02/22</td>
+                            <td class="td">$6666</td>
+                            <td class="td">$432</td>
+                            <td class="td">12</td>
+                        </tr>
+                        <tr class="tr">
+                            <td class="td">4324234232</td>
+                            <td class="td">2022/02/22</td>
+                            <td class="td">$6666</td>
+                            <td class="td">$432</td>
+                            <td class="td">12</td>
+                        </tr>
+                        <tr class="tr">
+                            <td class="td">4324234232</td>
+                            <td class="td">2022/02/22</td>
+                            <td class="td">$6666</td>
+                            <td class="td">$432</td>
+                            <td class="td">12</td>
+                        </tr>
+                        <tr class="tr">
+                            <td class="td">4324234232</td>
+                            <td class="td">2022/02/22</td>
+                            <td class="td">$6666</td>
+                            <td class="td">$432</td>
+                            <td class="td">12</td>
+                        </tr>
+                        <tr class="tr">
+                            <td class="td">4324234232</td>
+                            <td class="td">2022/02/22</td>
+                            <td class="td">$6666</td>
+                            <td class="td">$432</td>
+                            <td class="td">12</td>
+                        </tr>
+                        <tr class="tr">
+                            <td class="td">4324234232</td>
+                            <td class="td">2022/02/22</td>
+                            <td class="td">$6666</td>
+                            <td class="td">$432</td>
+                            <td class="td">12</td>
+                        </tr>
+                        <tr class="tr">
+                            <td class="td">4324234232</td>
+                            <td class="td">2022/02/22</td>
+                            <td class="td">$6666</td>
+                            <td class="td">$432</td>
+                            <td class="td">12</td>
+                        </tr>
+                        <tr class="tr">
+                            <td class="td">4324234232</td>
+                            <td class="td">2022/02/22</td>
+                            <td class="td">$6666</td>
+                            <td class="td">$432</td>
+                            <td class="td">12</td>
+                        </tr>
+                        <tr class="tr">
+                            <td class="td">4324234232</td>
+                            <td class="td">2022/02/22</td>
+                            <td class="td">$6666</td>
+                            <td class="td">$432</td>
+                            <td class="td">12</td>
+                        </tr>
+                        <tr class="tr">
+                            <td class="td">4324234232</td>
+                            <td class="td">2022/02/22</td>
+                            <td class="td">$6666</td>
+                            <td class="td">$432</td>
+                            <td class="td">12</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="" id="content-deposit-history">content-deposit-history</div>
+            <div class="" id="content-withdrawal-history">content-withdrawal-history</div>
+            <div class="" id="content-trade-history">content-trade-history</div>
+            <div class="" id="content-referrals">referrals</div>
+            <div class="" id="content-settings">settings</div>
+
         </div>
     </section>
     <script src="/assets/scripts/account.js"></script>
