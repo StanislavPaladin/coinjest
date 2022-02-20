@@ -24,6 +24,10 @@
     }
 
     // адаптив main page
+    .main-comments__navigation {
+        top: 250px;
+    }
+
     .main-main {
         margin: 40px 0 80px 0;
     }
@@ -159,6 +163,7 @@
     }
 
     .main-comments__slider {
+        width: 445px;
         display: flex;
         flex-direction: column-reverse;
         align-items: flex-start;
@@ -725,6 +730,7 @@
     }
 
     .main-comments__navigation {
+        top: 180px;
         width: 60px;
     }
 

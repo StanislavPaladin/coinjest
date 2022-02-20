@@ -7,6 +7,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CoinJects</title>
     <link rel="stylesheet" href="/assets/css/style.css">
+    <script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script src="/assets/slick/slick.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="/assets/slick/slick.css" />
+    <link rel="stylesheet" type="text/css" href="/assets/slick/slick-theme.css" />
 </head>
 
 <body>
@@ -38,11 +42,13 @@
                 </div>
             </div>
             <div class="main-card neon-green">
-                <div class="main-card__title"><span>A Global Leader </span><span>in Digital Asset Management</span>  </div>
+                <div class="main-card__title"><span>A Global Leader </span><span>in Digital Asset Management</span>
+                </div>
                 <div class="main-card__wrapper">
                     <div class="main-card__info">Our AI Trade History</div>
-                    <div class="main-card__link"><a href="./assets/pages/about.html"> <span class="main-card__span">here</span> <img
-                        src="./assets/img/arrow-right.svg" alt="arrow"></a></div>
+                    <div class="main-card__link"><a href="./assets/pages/about.html"> <span
+                                class="main-card__span">here</span> <img src="./assets/img/arrow-right.svg"
+                                alt="arrow"></a></div>
                 </div>
             </div>
             <div class="main-steps">
@@ -61,7 +67,8 @@
                     <div class="main-steps__item">
                         <div class="main-steps__title">2. Fund your account</div>
                         <div class="main-steps__info">Select preferred payment currency in your account: Bitcoin,
-                            Ethereum, Bitcoin Cash. No crypto yet? Click <a href="https://bitcoin.org/" class="link__dashed">here</a>  to learn how to buy Bitcoin and transfer
+                            Ethereum, Bitcoin Cash. No crypto yet? Click <a href="https://bitcoin.org/"
+                                class="link__dashed">here</a> to learn how to buy Bitcoin and transfer
                             the currency to your account.
                         </div>
                     </div>
@@ -84,18 +91,37 @@
                 </div>
             </div>
             <div class="main-comments">
-                <div class="main-comments__big">Why are people choosing us?</div>
-                <div class="main-comments__slider">
-                    <div class="main-comments__navigation"><img class="navigation__left"
-                            src="./assets/img/slider-arrow.svg" alt="left"><img class="navigation__right"
-                            src="./assets/img/slider-arrow.svg" alt="right"></div>
-                    <div class="main-comments__item">
-                        <div class="main-comments__title">OUR COMPANY is trusted
-                            ???</div>
-                        <div class="main-comments__info">(1) CoinJets is one of the first Digital Investment
-                            platforms founded in 2018. Since that time thousands of our customers changed their lives to
-                            a better living</div>
+                <div class="main-comments__navigation"><img class="navigation__left" src="./assets/img/slider-arrow.svg"
+                        alt="left" id="prev"><img class="navigation__right" src="./assets/img/slider-arrow.svg"
+                        alt="right" id="next"></div>
+                <div class="index-slider">
+                    <div class="index-slide">
+                        <div class="main-comments__big">Why are people choosing us?</div>
+                        <div class="main-comments__slider">
+                            <div class="main-comments__item">
+                                <div class="main-comments__title">OUR COMPANY is trusted
+                                    ???</div>
+                                <div class="main-comments__info">(1) CoinJets is one of the first Digital Investment
+                                    platforms founded in 2018. Since that time thousands of our customers changed their
+                                    lives to
+                                    a better living</div>
+                            </div>
+                        </div>
                     </div>
+                    <div class="index-slide">
+                        <div class="main-comments__big">Why are people choosing s?</div>
+                        <div class="main-comments__slider">
+                            <div class="main-comments__item">
+                                <div class="main-comments__title">OUR COMPANY is trustsed
+                                    ???</div>
+                                <div class="main-comments__info">(1) CoinJets is oneasdasda of the first Digital Investment
+                                    platforms founded in 2018. Since that time thousands of our customers changed their
+                                    lives to
+                                    a better living</div>
+                            </div>
+                        </div>
+                    </div>
+
                 </div>
             </div>
             <div class="main-card neon-blue">
@@ -109,9 +135,10 @@
             </div>
             <div class="main-referrals">
                 <div class="main-referrals__wrapper">
-                    <div class="main-referrals__title"><span>Earn faster </span><span>with referrals</span>  </div>
-                    <div class="main-referrals__info"><span>Invite friends and get more profit. </span><span>Click <a href="#" class="link__dashed">here</a>  to get a
-                        unique referral link.</span>  
+                    <div class="main-referrals__title"><span>Earn faster </span><span>with referrals</span> </div>
+                    <div class="main-referrals__info"><span>Invite friends and get more profit. </span><span>Click <a
+                                href="#" class="link__dashed">here</a> to get a
+                            unique referral link.</span>
                     </div>
                 </div>
                 <div class="main-referrals__wrapper">
@@ -123,34 +150,39 @@
     </section>
     <footer class="footer">
         <div class="container">
-        <div class="footer-wrapper">
-            <div class="footer-links">
-                <div class="footer-links__title">Coinjects</div>
-                <div class="footer-links__item"><a href="./assets/pages/assuranse.html">Assurance</a></div>
-                <div class="footer-links__item"><a href="./assets/pages/learningPortal.html">Learning Portal</a></div>
-                <div class="footer-links__item"><a href="./assets/pages/about.html">About</a></div>
-                <div class="footer-links__item"><a href="./assets/pages/faq.html">FAQ</a></div>
-            </div>
-            <div class="footer-contacts">
-                <div class="footer-contacts__title">our Contacts</div>
-                <div class="footer-contacts__item">82 Oklahoma St</div>
-                <div class="footer-contacts__item"><a href="tel:+1(704)-565-7475">+1(704)-565-7475</a>
+            <div class="footer-wrapper">
+                <div class="footer-links">
+                    <div class="footer-links__title">Coinjects</div>
+                    <div class="footer-links__item"><a href="./assets/pages/assuranse.html">Assurance</a></div>
+                    <div class="footer-links__item"><a href="./assets/pages/learningPortal.html">Learning Portal</a>
+                    </div>
+                    <div class="footer-links__item"><a href="./assets/pages/about.html">About</a></div>
+                    <div class="footer-links__item"><a href="./assets/pages/faq.html">FAQ</a></div>
                 </div>
-                <div class="footer-contacts__item"><a href="mailto:info@coinjets.com">info@coinjets.com</a></div>
-                <div class="footer-contacts__item"><a href="https://crtokla.com">crtokla.com</a> </div>
-            </div>
-            <div class="footer-social">
-                <div class="footer-social__title">our social media</div>
-                <div class="footer-social__item"><a target="_blank" href="https://www.instagram.com/">Instagram</a>
+                <div class="footer-contacts">
+                    <div class="footer-contacts__title">our Contacts</div>
+                    <div class="footer-contacts__item">82 Oklahoma St</div>
+                    <div class="footer-contacts__item"><a href="tel:+1(704)-565-7475">+1(704)-565-7475</a>
+                    </div>
+                    <div class="footer-contacts__item"><a href="mailto:info@coinjets.com">info@coinjets.com</a></div>
+                    <div class="footer-contacts__item"><a href="https://crtokla.com">crtokla.com</a> </div>
                 </div>
-                <div class="footer-social__item"><a target="_blank" href="https://www.facebook.com/">Facebook</a></div>
-                <div class="footer-social__item"><a target="_blank" href="https://www.linkedin.com/">LinkedIn</a></div>
-                <div class="footer-social__item"><a target="_blank" href="https://web.telegram.org/">Telegram</a></div>
+                <div class="footer-social">
+                    <div class="footer-social__title">our social media</div>
+                    <div class="footer-social__item"><a target="_blank" href="https://www.instagram.com/">Instagram</a>
+                    </div>
+                    <div class="footer-social__item"><a target="_blank" href="https://www.facebook.com/">Facebook</a>
+                    </div>
+                    <div class="footer-social__item"><a target="_blank" href="https://www.linkedin.com/">LinkedIn</a>
+                    </div>
+                    <div class="footer-social__item"><a target="_blank" href="https://web.telegram.org/">Telegram</a>
+                    </div>
+                </div>
             </div>
         </div>
-    </div>
         <div class="footer-copyright">Copyright © 2018–2022 Coinjects. All Rights Reserved</div>
     </footer>
+    <script src="/assets/scripts/index.js"></script>
 </body>
 
 </html>
