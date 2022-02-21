@@ -374,3 +374,34 @@
     font-size: 18px;
     line-height: 32px;
 }
+
+.modal-nav {
+    display: none;
+}
+
+.modal-nav.active {
+    z-index: 9;
+    background-color: #111;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.burger-links {
+    position: fixed;
+    top: 250px;
+}
+
+.burger-links__item {
+    font-family: Furore;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 16px;
+    margin-bottom: 20px;
+}
