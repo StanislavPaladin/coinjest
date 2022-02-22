@@ -1,0 +1,280 @@
+.login-container .container {
+    margin-top: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    color: $primary-white;
+    position: relative;
+}
+
+.login-container .container::before {
+    content: "";
+    position: absolute;
+    width: 250px;
+    height: 270px;
+    top: -15%;
+    left: 0;
+    background: linear-gradient(90deg, #6A11CB 0%, #2575FC 100%);
+    opacity: .4;
+    filter: blur(130px);
+    z-index: -1;
+    -moz-background-size: 100%;
+    /* Firefox 3.6+ */
+    -webkit-background-size: 100%;
+    /* Safari 3.1+ и Chrome 4.0+ */
+    -o-background-size: 100%;
+    /* Opera 9.6+ */
+    background-size: 100%;
+    /* Современные браузеры */
+}
+
+.login-container .container::after {
+    content: "";
+    position: absolute;
+    width: 250px;
+    height: 270px;
+    bottom: -60%;
+    right: -10%;
+    background: linear-gradient(90deg, #6A11CB 0%, #2575FC 100%);
+    opacity: 1;
+    filter: blur(130px);
+    z-index: -1;
+    -moz-background-size: 100%;
+    /* Firefox 3.6+ */
+    -webkit-background-size: 100%;
+    /* Safari 3.1+ и Chrome 4.0+ */
+    -o-background-size: 100%;
+    /* Opera 9.6+ */
+    background-size: 100%;
+    /* Современные браузеры */
+}
+
+.login {
+    display: flex;
+    flex-direction: column;
+    padding: 40px;
+    background: radial-gradient(136.52% 329.37% at -11% 50%, rgba(255, 255, 255, 0.093) 0%, rgba(255, 255, 255, 0) 100%, rgba(255, 255, 255, 0) 100%);
+    backdrop-filter: blur(250px);
+    width: 511px;
+    height: auto;
+}
+
+.login-title {
+    font-family: Furore;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 30px;
+    line-height: 35px;
+    margin-bottom: 20px;
+}
+
+.login-wrapper {
+    display: flex;
+    font-family: Furore;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 10px;
+    line-height: 12px;
+    margin-bottom: 40px;
+}
+
+.login-wrapper__span {
+    color: $login-white;
+    margin-right: 20px;
+}
+
+.login-wrapper__link {
+    color: $blue;
+}
+
+.login-label {
+    font-family: Furore;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 14px;
+    margin-bottom: 5px;
+}
+
+.registration-label {
+    font-family: Furore;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 14px;
+    margin-bottom: 5px;
+    color: $blue;
+}
+
+.input-wrapper {
+    margin-bottom: 21px;
+}
+
+.login-input {
+    padding: 13px;
+    width: 430px;
+    height: 40px;
+    border: 1px solid $pure-white;
+    color: $login-white;
+    background-color: inherit;
+    box-sizing: border-box;
+    font-family: Furore;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 14px;
+}
+
+.login-input:focus {
+    outline: none;
+}
+
+.login-wrapper__space {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 40px;
+}
+
+.login-wrapper__item {
+    display: flex;
+    align-items: center;
+}
+
+.login-label__remember {
+    font-family: Furore;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 10px;
+    line-height: 12px;
+    margin-left: 4px;
+    cursor: pointer;
+}
+
+.login-wrapper__link {
+    font-family: Furore;
+    color: $blue;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 10px;
+    line-height: 12px;
+}
+
+.login-button {
+    width: 430px;
+    height: 50px;
+    background-color: $blue;
+    color: $pure-white;
+    font-family: Furore;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 16px;
+    cursor: pointer;
+    border: 0;
+}
+
+.login-checkbox+label {
+    display: inline-flex;
+    align-items: center;
+    user-select: none;
+}
+
+.login-checkbox {
+    position: absolute;
+    z-index: -1;
+    opacity: 0;
+}
+
+.login-checkbox+label::before {
+    content: '';
+    display: inline-block;
+    width: 1em;
+    height: 1em;
+    flex-shrink: 0;
+    flex-grow: 0;
+    border: 1px solid #adb5bd;
+    border-radius: 0.25em;
+    margin-right: 0.5em;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 50% 50%;
+}
+
+.login-checkbox+label::before {
+    border: 2px solid $pure-white;
+}
+
+.login-checkbox:checked+label::before {
+    border-color: $pure-white;
+    border: 2px solid $pure-white;
+    color: $blue;
+    background-color: inherit;
+    background-image: url("/assets/icons/check.svg");
+    background-size: 150%;
+}
+
+.login-error {
+    margin-top: 5px;
+    font-family: Furore;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 8px;
+    line-height: 9px;
+    color: $account-red;
+}
+
+.registration-select {
+    width: 430px;
+    height: 40px;
+    border: 1px solid $login-white;
+    color: $login-gray;
+    padding: 13px;
+}
+
+.registration-select__list {
+    border: 1px solid $login-white;
+    background-color: #111;
+    width: 430px;
+}
+
+.registration-select__item {
+    font-family: Furore;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 14px;
+    margin: 5px 5px;
+    transition: .3s;
+}
+
+.registration-select__item:hover {
+    color: $blue;
+    transition: .3s;
+}
+
+.registration-label__agree {
+    cursor: pointer;
+    font-family: Furore;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 10px;
+    line-height: 12px;
+    color: $pure-white;
+}
+
+.registration-wrapper__item {
+    margin: 40px 0 0 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.registration-wrapper__link {
+    font-family: Furore;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 10px;
+    line-height: 12px;
+    color: $blue;
+}

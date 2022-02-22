@@ -120,7 +120,7 @@
     line-height: 46px;
 }
 
-.main-card__span{
+.main-card__span {
     margin-right: 50px;
 }
 
@@ -195,7 +195,7 @@
     margin-bottom: 200px;
 }
 
-.main-about::after{
+.main-about::after {
     content: "";
     position: absolute;
     width: 450px;
@@ -375,33 +375,102 @@
     line-height: 32px;
 }
 
-.modal-nav {
+.modal {
     display: none;
 }
 
-.modal-nav.active {
-    z-index: 9;
-    background-color: #111;
+.modal.active {
+    display: block;
+    z-index: 11;
+    position: fixed;
+    top: 60px;
     width: 100%;
     height: 100%;
+    background-color: #000;
+    backdrop-filter: blur(250px);
+}
+
+.modal-nav {
+    display: none;
+    position: sticky;
+}
+
+.modal.active .modal-nav {
+    z-index: 9;
+    background: radial-gradient(141.73% 341.95% at -11% 50%, rgba(255, 255, 255, 0.093) 0%, rgba(255, 255, 255, 0) 100%, rgba(255, 255, 255, 0) 100%);
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    backdrop-filter: blur(250px);
+    width: 620px;
+    height: 433px;
     position: absolute;
-    top: 0;
+    top: 80px;
     left: 0;
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
 }
 
-.burger-links {
-    position: fixed;
-    top: 250px;
+.burger-links__cross {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 30px;
+    cursor: pointer;
 }
 
 .burger-links__item {
+    text-align: center;
     font-family: Furore;
     font-style: normal;
     font-weight: normal;
-    font-size: 14px;
-    line-height: 16px;
-    margin-bottom: 20px;
+    font-size: 30px;
+    line-height: 35px;
+    margin-bottom: 15px;
+    color: $pure-white;
+    transition: .3s;
+}
+
+.burger-links__item.active,
+.burger-links__item:hover {
+    color: $blue;
+    transition: .3s;
+}
+
+.burger-links__wrapper {
+    margin-top: 65px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.burger-links__btn-login {
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: $blue;
+    font-family: Furore;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 14px;
+    width: 140px;
+    height: 40px;
+}
+
+.burger-links__btn-sign {
+    cursor: pointer;
+    width: 140px;
+    height: 40px;
+    border: 1px solid $pure-white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: $pure-white;
+    font-family: Furore;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 14px;
 }

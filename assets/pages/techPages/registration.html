@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CoinJects</title>
+    <link rel="stylesheet" href="/assets/css/style.css">
+    <script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</head>
+
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="header-logo"><a href="#"><img src="/assets/img/logo.svg" alt="logo"></a></div>
+            <nav class="header-links">
+                <div class="header-links__item"><a href="../assets/pages/assuranse.html">Assurance</a></div>
+                <div class="header-links__item"><a href="../assets/pages/learningPortal.html">Learning portal</a></div>
+                <div class="header-links__item dashed"><a href="../assets/pages/about.html"> About us</a></div>
+                <div class="header-links__item"><a href="../assets/pages/faq.html">FAQ</a></div>
+            </nav>
+            <div class="header-login">
+                <div class="header-login__item dashed" id="login"><a href="/assets/pages/techPages/login.html">Login</a>
+                </div>
+                <div class="header-login__item" id="signUp"><a href="/assets/pages/techPages/login.html">Sign up</a>
+                </div>
+            </div>
+            <div class="header-burger">
+                <div class="header-burger__item"></div>
+                <div class="header-burger__item"></div>
+            </div>
+        </div>
+    </header>
+    <section class="login-container">
+        <div class="container">
+            <form action="" class="login">
+                <div class="login-title">Registration</div>
+                <div class="login-wrapper">
+                    <div class="login-wrapper__span">already registered?</div>
+                    <div class="login-wrapper__link"><a href="">Sign Up</a> </div>
+                </div>
+                <div class="login-wrapper__column">
+                    <div class="input-wrapper">
+                        <label for="first-name" class="registration-label">First name*</label>
+                        <input type="text" class="login-input" name="first-name" placeholder="example">
+                        <span class="login-error"></span>
+                    </div>
+                    <div class="input-wrapper">
+                        <label for="last-name" class="registration-label">Last name*</label>
+                        <input type="text" class="login-input" name="last-name" placeholder="example">
+                        <span class="login-error"></span>
+                    </div>
+                    <div class="input-wrapper">
+                        <label for="user-name" class="registration-label">Username*</label>
+                        <input type="text" class="login-input" name="user-name" placeholder="example">
+                        <span class="login-error"></span>
+                    </div>
+                    <div class="input-wrapper">
+                        <label for="email" class="registration-label">E-mail*</label>
+                        <input type="email" class="login-input" name="email" placeholder="example@example.ru">
+                        <span class="login-error"></span>
+                    </div>
+                    <div class="input-wrapper">
+                        <label for="phone" class="registration-label">Mobile*</label>
+                        <input type="phone" class="login-input" name="phone" placeholder="+1">
+                        <span class="login-error"></span>
+                    </div>
+                    <div class="input-wrapper">
+                        <label for="country" class="registration-label">Country*</label>
+                        <select name="country" id="country" class="select">
+                            <option disabled>United States</option>
+                            <option value="ukraine">Ukraine</option>
+                            <option value="usa">United States</option>
+                        </select>
+                        <span class="login-error"></span>
+                    </div>
+                    <div class="input-wrapper">
+                        <label for="password" class="registration-label">password*</label>
+                        <input type="password" class="login-input" name="password" placeholder="">
+                        <span class="login-error"></span>
+                    </div>
+                    <div class="input-wrapper">
+                        <label for="password-confirm" class="registration-label">password*</label>
+                        <input type="password" class="login-input" name="password-confirm" placeholder="">
+                        <span class="login-error"></span>
+                    </div>
+                    <div class="input-wrapper">
+                        <label for="referral" class="registration-label">Referral ID</label>
+                        <input type="text" class="login-input" name="referral" placeholder="423424234">
+                        <span class="login-error">test</span>
+                    </div>
+                </div>
+                <div class="login-wrapper__space">
+                    <div class="login-wrapper__item">
+                        <input type="checkbox" id="agree" name="agree" value="no" class="login-checkbox">
+                        <label for="agree" class="registration-label__agree">I agree with Terms & Conditions and Privacy Policy</label>
+                    </div>
+                </div>
+                <button type="submit" class="login-button">log in</button>
+                <div class="registration-wrapper__item">
+                    <div class="registration-wrapper__link"><a href="">Forgot Password?</a>  </div>
+                </div>
+            </form>
+        </div>
+    </section>
+    <script src="/assets/scripts/login.js"></script>
+</body>
