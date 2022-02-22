@@ -2484,6 +2484,123 @@ option {
   color: #2554FC;
 }
 
+.letter .container {
+  margin-top: 65px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  color: #F2F2F2;
+  position: relative;
+  font-family: Furore;
+  font-style: normal;
+  font-weight: normal;
+}
+
+.letter-card:after {
+  content: "";
+  position: absolute;
+  width: 150px;
+  height: 100px;
+  top: 70%;
+  right: -10%;
+  background: linear-gradient(90deg, #43E97B 0%, #38F9D7 100%);
+  transform: rotate(109deg);
+  opacity: .8;
+  border-radius: 50%;
+  filter: blur(70px);
+  z-index: -1;
+  /* Firefox 3.6+ */
+  /* Safari 3.1+ и Chrome 4.0+ */
+  /* Opera 9.6+ */
+  background-size: 100%;
+  /* Современные браузеры */
+}
+
+.letter-card {
+  padding: 20px 22px 30px 28px;
+  width: 500px;
+  height: 400px;
+  background: radial-gradient(136.52% 329.37% at -11% 50%, rgba(255, 255, 255, 0.093) 0%, rgba(255, 255, 255, 0) 100%, rgba(255, 255, 255, 0) 100%);
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  box-sizing: border-box;
+  backdrop-filter: blur(250px);
+  border: 1px solid #FFFFFF;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: space-between;
+}
+
+.letter-card__title {
+  font-size: 40px;
+  line-height: 46px;
+  width: 390px;
+}
+
+.letter-card__info {
+  font-size: 15px;
+  line-height: 17px;
+}
+
+.letter-card__btn-main {
+  align-self: end;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 200px;
+  height: 40px;
+  background-color: #27AE60;
+  color: #F5F5F5;
+  margin-right: 8px;
+  cursor: pointer;
+}
+
+.letter-card__secondary {
+  align-self: end;
+  margin-right: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 200px;
+  height: 40px;
+  border: 1px solid #27AE60;
+  background-color: inherit;
+  color: #F5F5F5;
+}
+
+.letter-card__secondary-green {
+  color: #27AE60;
+}
+
+.confirmation {
+  width: 284px;
+}
+
+.recovery {
+  width: 374px;
+}
+
+.letter-footer {
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: normal;
+  margin-top: 95px;
+  font-size: 12px;
+  line-height: 22px;
+  text-align: center;
+}
+
+.letter-card__long {
+  width: 444px;
+  height: 40px;
+  border: 1px solid #27AE60;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 13px 5px 13px 40px;
+}
+
 @media (max-width: 1200px) {
   .sidebar {
     width: 220px;
@@ -3011,11 +3128,34 @@ option {
   .login {
     width: 300px;
   }
-  .login-input, .login-button {
+  .login-input,
+  .login-button {
     width: 100%;
   }
-  .registration-select, .registration-select__list, .registration-select__item {
+  .registration-select,
+  .registration-select__list,
+  .registration-select__item {
     width: 220px;
+  }
+  .letter-card {
+    width: 300px;
+    min-height: 300px;
+  }
+  .letter-card__btn-main, .letter-card__secondary {
+    align-self: center;
+    margin-right: 0;
+  }
+  .letter-card__title {
+    width: 90%;
+    font-size: 30px;
+    line-height: 36px;
+  }
+  .confirmation, .recovery {
+    width: 90%;
+  }
+  .letter-card__info {
+    font-size: 13px;
+    line-height: 14px;
   }
   .modal.active .modal-nav {
     width: 300px;

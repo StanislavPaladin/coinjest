@@ -664,15 +664,45 @@
 
 // mobile adapive
 @media (max-width: 767px) {
+
     // login/registration page
     .login {
         width: 300px;
     }
-    .login-input, .login-button{
+
+    .login-input,
+    .login-button {
         width: 100%;
     }
-    .registration-select, .registration-select__list, .registration-select__item {
+
+    .registration-select,
+    .registration-select__list,
+    .registration-select__item {
         width: 220px;
+    }
+
+    // emails
+    .letter-card {
+        width: 300px;
+        min-height: 300px;
+    }
+    .letter-card__btn-main, .letter-card__secondary {
+        align-self: center;
+        margin-right: 0;
+    }
+
+    .letter-card__title {
+        width: 90%;
+        font-size: 30px;
+        line-height: 36px;
+    }
+    .confirmation, .recovery {
+        width: 90%;
+    }
+
+    .letter-card__info {
+        font-size: 13px;
+        line-height: 14px;
     }
 
     // модалка навигации (burger)
