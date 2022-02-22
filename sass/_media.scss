@@ -705,6 +705,40 @@
         line-height: 14px;
     }
 
+    // tech pages
+    .tech {
+        width: 100%;
+    }
+    .tech-title {
+        margin-top: 0px;
+        font-size: 30px;
+        line-height: 41px;
+        margin-bottom: 27px;
+    }
+    
+    .tech-info {
+        max-width: 972px;
+        font-size: 16px;
+        line-height: 20px;
+        margin-bottom: 50px;
+    }
+    
+    .tech-button {
+        width: 288px;
+        height: 50px;
+        background-color: $blue;
+        border: 0;
+        color: $primary-white;
+        cursor: pointer;
+    }
+    
+    .tech-info__small {
+        width: 90%;
+        font-size: 16px;
+        line-height: 20px;
+        margin-bottom: 50px;
+    }
+
     // модалка навигации (burger)
     .modal.active .modal-nav {
         width: 300px;

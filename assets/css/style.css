@@ -2601,6 +2601,91 @@ option {
   padding: 13px 5px 13px 40px;
 }
 
+.tech-container .container::before {
+  content: "";
+  position: absolute;
+  width: 250px;
+  height: 370px;
+  top: -50%;
+  left: 15%;
+  background: linear-gradient(90deg, #FB93B2 0%, #FC0829 100%);
+  opacity: .4;
+  filter: blur(150px);
+  z-index: -1;
+  /* Firefox 3.6+ */
+  /* Safari 3.1+ и Chrome 4.0+ */
+  /* Opera 9.6+ */
+  background-size: 100%;
+  /* Современные браузеры */
+}
+
+.tech-container .container::after {
+  content: "";
+  position: absolute;
+  width: 550px;
+  height: 570px;
+  top: 100%;
+  left: 80%;
+  background: linear-gradient(90deg, #920000 0%, #FAACA8 100%, #670500 100%);
+  opacity: .6;
+  filter: blur(130px);
+  z-index: -1;
+  /* Firefox 3.6+ */
+  /* Safari 3.1+ и Chrome 4.0+ */
+  /* Opera 9.6+ */
+  background-size: 100%;
+  /* Современные браузеры */
+}
+
+.tech-container .container {
+  margin-top: 80px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  color: #F2F2F2;
+  font-family: Furore;
+  font-style: normal;
+  font-weight: normal;
+}
+
+.login-container .container {
+  color: #F2F2F2;
+  font-family: Furore;
+  font-style: normal;
+  font-weight: normal;
+}
+
+.tech-title {
+  margin-top: 40px;
+  font-size: 70px;
+  line-height: 81px;
+  margin-bottom: 27px;
+}
+
+.tech-info {
+  max-width: 972px;
+  font-size: 30px;
+  line-height: 35px;
+  margin-bottom: 98px;
+}
+
+.tech-button {
+  width: 288px;
+  height: 50px;
+  background-color: #2554FC;
+  border: 0;
+  color: #F2F2F2;
+  cursor: pointer;
+}
+
+.tech-info__small {
+  width: 574px;
+  font-size: 30px;
+  line-height: 35px;
+  margin-bottom: 80px;
+}
+
 @media (max-width: 1200px) {
   .sidebar {
     width: 220px;
@@ -3156,6 +3241,35 @@ option {
   .letter-card__info {
     font-size: 13px;
     line-height: 14px;
+  }
+  .tech {
+    width: 100%;
+  }
+  .tech-title {
+    margin-top: 0px;
+    font-size: 30px;
+    line-height: 41px;
+    margin-bottom: 27px;
+  }
+  .tech-info {
+    max-width: 972px;
+    font-size: 16px;
+    line-height: 20px;
+    margin-bottom: 50px;
+  }
+  .tech-button {
+    width: 288px;
+    height: 50px;
+    background-color: #2554FC;
+    border: 0;
+    color: #F2F2F2;
+    cursor: pointer;
+  }
+  .tech-info__small {
+    width: 90%;
+    font-size: 16px;
+    line-height: 20px;
+    margin-bottom: 50px;
   }
   .modal.active .modal-nav {
     width: 300px;

@@ -1,0 +1,89 @@
+.tech-container .container::before {
+    content: "";
+    position: absolute;
+    width: 250px;
+    height: 370px;
+    top: -50%;
+    left: 15%;
+    background: linear-gradient(90deg, #FB93B2 0%, #FC0829 100%);
+    opacity: .4;
+    filter: blur(150px);
+    z-index: -1;
+    -moz-background-size: 100%;
+    /* Firefox 3.6+ */
+    -webkit-background-size: 100%;
+    /* Safari 3.1+ и Chrome 4.0+ */
+    -o-background-size: 100%;
+    /* Opera 9.6+ */
+    background-size: 100%;
+    /* Современные браузеры */
+}
+.tech-container .container::after {
+    content: "";
+    position: absolute;
+    width: 550px;
+    height: 570px;
+    top: 100%;
+    left: 80%;
+    background: linear-gradient(90deg, #920000 0%, #FAACA8 100%, #670500 100%);
+    opacity: .6;
+    filter: blur(130px);
+    z-index: -1;
+    -moz-background-size: 100%;
+    /* Firefox 3.6+ */
+    -webkit-background-size: 100%;
+    /* Safari 3.1+ и Chrome 4.0+ */
+    -o-background-size: 100%;
+    /* Opera 9.6+ */
+    background-size: 100%;
+    /* Современные браузеры */
+}
+
+.tech-container .container {
+    margin-top: 80px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    color: $primary-white;
+    font-family: Furore;
+    font-style: normal;
+    font-weight: normal;
+}
+
+.login-container .container {
+    color: $primary-white;
+    font-family: Furore;
+    font-style: normal;
+    font-weight: normal;
+}
+
+.tech-title {
+    margin-top: 40px;
+    font-size: 70px;
+    line-height: 81px;
+    margin-bottom: 27px;
+}
+
+.tech-info {
+    max-width: 972px;
+    font-size: 30px;
+    line-height: 35px;
+    margin-bottom: 98px;
+}
+
+.tech-button {
+    width: 288px;
+    height: 50px;
+    background-color: $blue;
+    border: 0;
+    color: $primary-white;
+    cursor: pointer;
+}
+
+.tech-info__small {
+    width: 574px;
+    font-size: 30px;
+    line-height: 35px;
+    margin-bottom: 80px;
+}
